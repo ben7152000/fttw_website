@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
-      <script type="text/javascript">
-        /**
-         * 禁止用F12
-         */
-        window.onkeydown = window.onkeyup = window.onkeypress = function (e) {
-          if (e.keyCode === 123) {
-            e.preventDefault()
-            window.event.returnValue = false
-          }
-        }
-
-        /**
-         * 禁止右鍵
-         */
-        document.addEventListener('contextmenu', function(e) {
-          e.preventDefault();
-        });
-      </script>
   </head>
   <body>
+  <script type="text/javascript">
+    /**
+     * 禁止用F12
+     */
+    window.onkeydown = window.onkeyup = window.onkeypress = function (e) {
+      if (e.keyCode === 123) {
+        e.preventDefault()
+        window.event.returnValue = false
+      }
+    }
+
+    /**
+     * 禁止右鍵
+     */
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
