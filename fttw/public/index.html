@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+      <script type="text/javascript">
+        // 禁止复制网址
+        function disableCopy() {
+          document.addEventListener('copy', function(event) {
+            event.preventDefault();
+          });
+        }
+
+        // 在页面加载时调用禁止复制函数
+        window.onload = disableCopy;
+      </script>
   </head>
   <body>
     <noscript>
