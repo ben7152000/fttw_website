@@ -7,15 +7,22 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
       <script type="text/javascript">
-        // 禁止复制网址
-        function disableCopy() {
-          document.addEventListener('copy', function(event) {
-            event.preventDefault();
-          });
+        /**
+         * 禁止用F12
+         */
+        window.onkeydown = window.onkeyup = window.onkeypress = function (e) {
+          if (e.keyCode === 123) {
+            e.preventDefault()
+            window.event.returnValue = false
+          }
         }
 
-        // 在页面加载时调用禁止复制函数
-        window.onload = disableCopy;
+        /**
+         * 禁止右鍵
+         */
+        document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+        });
       </script>
   </head>
   <body>
