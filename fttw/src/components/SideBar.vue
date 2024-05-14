@@ -16,7 +16,6 @@
 <style>
 .side-bar {
   width: 235px;
-  height: 100%;
   padding: 50px 20px 10px;
   background-color: #DFF2FD;
 }

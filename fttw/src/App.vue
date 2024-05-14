@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="index">
     <SideBar />
     <div class="side-content">
       <router-view />
@@ -12,16 +12,14 @@ import SideBar from "@/components/SideBar.vue";
 </script>
 
 <style scoped>
-.home {
+.index {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
 }
 
 .side-content {
   width: 100%;
-  height: 100%;
-  padding: 20px;
-  background-color: #F3F4F7;
+  min-height: 100vh;
 }
 </style>

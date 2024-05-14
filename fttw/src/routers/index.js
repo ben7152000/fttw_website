@@ -16,9 +16,14 @@ const routes = [
     component: () => import('../views/psychometrics.vue')
   },
   {
-    path: '/psychometrics/:name',
-    name: 'Psychometric',
-    component: () => import('../views/psychometric.vue')
+    path: '/psychometrics/direction/:name',
+    name: 'Direction',
+    component: () => import('../views/direction.vue')
+  },
+  {
+    path: '/psychometrics/game/:name',
+    name: 'Game',
+    component: () => import('../views/game.vue')
   },
   {
     path: '/login',

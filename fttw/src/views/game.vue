@@ -35,8 +35,8 @@ const gameInfo = computed(() => {
 <style scoped>
 .psychometric {
   width: 100%;
-  height: 100%;
-  padding: 20px;
+  padding: 40px;
+  background-color: #F3F4F7;
 }
 
 .title {

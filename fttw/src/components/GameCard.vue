@@ -1,5 +1,5 @@
 <template>
-  <div class="game-card" @click="goToGame">
+  <div class="game-card" @click="goToDirection">
     <div class="game-card-pass-mark">
       <span>PASS</span>
       <span>PASS Advanced</span>
@@ -41,8 +41,8 @@ const props = defineProps({
 
 const router = useRouter()
 
-const goToGame = () => {
-  router.push({ path: `/psychometrics/${props.name}` })
+const goToDirection = () => {
+  router.push({ path: `/psychometrics/direction/${props.name}` })
 }
 </script>
 

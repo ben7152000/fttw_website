@@ -32,8 +32,9 @@ const gameLists = [
 <style scoped>
 .psychometrics {
   width: 100%;
-  height: 100%;
-  padding: 20px;
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #F3F4F7;
 }
 
 .title {
