@@ -106,7 +106,8 @@ const goToDirection = () => {
 
 .game-card-image {
   width: 100%;
-  margin: 24px 0 16px;
+  height: 150px;
+  margin: 24px 0 24px;
 }
 
 .game-card-subtitle {
